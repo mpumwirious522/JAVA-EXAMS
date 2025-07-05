@@ -23,6 +23,6 @@ public class UgandaAppearances {
         }
         
         System.out.println("The word 'Uganda' appears " + count + " times.");
-        Input.close();
+        
     }
 }
