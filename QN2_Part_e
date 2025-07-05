@@ -1,0 +1,28 @@
+
+package javaexam;
+
+/**
+ *
+ * @author mpumwire
+ */
+import java.util.Scanner;
+
+public class UgandaAppearances {
+    public static void main(String[] args) {
+        Scanner Input = new Scanner(System.in);
+        System.out.println("Enter the book description:");
+        String description = Input.nextLine();
+        
+      
+        String[] words = description.toLowerCase().split("\\W+"); 
+        int count = 0;
+        for (String word : words) {
+            if (word.equals("uganda")) {
+                count++;
+            }
+        }
+        
+        System.out.println("The word 'Uganda' appears " + count + " times.");
+        Input.close();
+    }
+}
